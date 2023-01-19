@@ -15,8 +15,8 @@ namespace DiceGame
             int[] rollResults = new int[13];
             for (int i = 0; i < rollNumber; i++)
             {
-                int dice1 = (rnd.Next(6));
-                int dice2 = (rnd.Next(6));
+                int dice1 = (rnd.Next(7));
+                int dice2 = (rnd.Next(7));
                 rollResults[dice1 + dice2]++;
             }
 
@@ -33,6 +33,8 @@ namespace DiceGame
                 }
                 Console.WriteLine();
             }
+
+            Console.Write("Thank you for throwing dice with us! ");
         }
     }
 }
